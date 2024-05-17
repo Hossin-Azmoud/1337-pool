@@ -1,5 +1,6 @@
 #include <stdio.h>
-char __tolower(char c) {
+
+char	__tolower(char c) {
     if (c >= 'A' && c <= 'Z') {
         return (c + 32);
     }
@@ -7,7 +8,7 @@ char __tolower(char c) {
     return (c);
 }
 
-char __toupper(char c) {
+char	__toupper(char c) {
     if (c >= 'a' && c <= 'z') {
         return (c - 32);
     }
@@ -15,11 +16,11 @@ char __toupper(char c) {
     return (c);
 }
 
-int __isalnum(char c) {
+int	__isalnum(char c) {
     return (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9');
 }
 
-int capitalize_word(char *s) {
+int	capitalize_word(char *s) {
     int it = 0;
 
     while (__isalnum(s[it]) && s[it]) {
@@ -35,12 +36,9 @@ int capitalize_word(char *s) {
     return (it);
 }
 
-// salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un
-// Salut, Comment Tu Vas ? 42mots Quarante-Deux; Cinquante+Et+Un
-char *ft_strcapitalize(char *s) {    
+char	*ft_strcapitalize(char *s) {    
     int it = 0;
     while (s[it]) {
-        // skip non alnum.
         while (!__isalnum(s[it]))
             it++;
 

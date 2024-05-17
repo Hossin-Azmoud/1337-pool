@@ -1,4 +1,4 @@
-char toupper(char c) {
+char	toupper(char c) {
     if (c >= 'a' && c <= 'z') {
         return (c - 32);
     }
@@ -6,7 +6,7 @@ char toupper(char c) {
     return (c);
 }
 
-char *ft_strupcase(char *str) {
+char	*ft_strupcase(char *str) {
     int it = 0;
     while (str[it]) {
         str[it] = toupper(str[it]);

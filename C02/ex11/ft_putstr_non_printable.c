@@ -1,22 +1,19 @@
 #include <unistd.h>
 #include <stdio.h>
-int __isprint(char c)
-{
-    return (c >= 32 && c < 127);
-}
 
-int __puts_2hex(char *s) {
-    int i = 0;
+int	puts_2hex(char *s) {
+    int i;
 
+		i = 0;
     while (i < 3) {
         write(1, s + i, 1);
         i++;
     }
 
-    return i;
+    return (i);
 }
 
-char tohex(char c) {
+char	tohex(char c) {
     if (c % 16 >= 10) {
         return (c % 16 - 10 + 'a');
     }
@@ -24,7 +21,7 @@ char tohex(char c) {
     return (c % 16 + '0');
 }
 
-int print_as_hex(char code) {
+int	print_as_hex(char code) {
 
     char as_hex_buffer[3] = { 
         [0] = tohex((code / 16)),
@@ -32,15 +29,18 @@ int print_as_hex(char code) {
         [2] = 0,
     };
 
-    __puts_2hex(as_hex_buffer);
+    puts_2hex(as_hex_buffer);
 }
 
-void ft_putstr_non_printable(char *str) 
+void	ft_putstr_non_printable(char *str) 
 {
-    int i = 0;
-
+    int i;
+		char c;
+		
+		i = 0;
     while (str[i]) {
-        if (__isprint(str[i])) {
+				c = str[i];
+        if (c >= 32 && c < 127) {
             write(1, str + i, 1);
         } else {
             write(1, "\\", 1);

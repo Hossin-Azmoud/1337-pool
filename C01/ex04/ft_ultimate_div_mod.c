@@ -1,7 +1,21 @@
-void ft_ultimate_div_mod(int *a, int *b) {
-    int oa, ob;
-    oa = *a;
-    ob = *b;
-    *a = oa/ob;
-    *b = oa%ob;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_rev_int_tab.c.c                                   :+     ::+:    :+:  */
+/*                                                     +:+ +:+         +:+    */
+/*   By: Hossin Azmoud <azm@student.42.fr>            +#+  +:+       +#+      */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/17 18:48:13 by Hossin           #+#    #+#              */
+/*   Updated: 2024/05/17 18:48:13 by Hossin          ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
+void	ft_ultimate_div_mod(int *a, int *b)
+{
+	int	oa;
+	int	ob;
+
+	oa = *a;
+	ob = *b;
+	*a = oa / ob;
+	*b = oa % ob;
 }

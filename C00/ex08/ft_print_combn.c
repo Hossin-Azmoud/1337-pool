@@ -1,12 +1,12 @@
 #include <unistd.h>
 #include <stdio.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
     write(1, &c, 1);
 }
 
-void ft_put_array(int *array, int n)
+void	ft_put_array(int *array, int n)
 {
     char c = 0;
     while (n >= 0) {
@@ -16,7 +16,7 @@ void ft_put_array(int *array, int n)
     }
 }
 
-void ft_print_combn(int n) // 2
+void	ft_print_combn(int n)
 {
     int array[n];
     int is_valid = 0;
@@ -31,14 +31,14 @@ void ft_print_combn(int n) // 2
     while (array[0] < 9) 
     {
 
-        // Increment the itth digit.
+       
         while (array[it] < 9) {
             ft_put_array(array, n);
             ft_putchar(' ');
             array[it]++;
         }
 
-        // reset the digits the were displayed
+
         i = n - 1;
         while (i > it) {
             array[i] = 0;

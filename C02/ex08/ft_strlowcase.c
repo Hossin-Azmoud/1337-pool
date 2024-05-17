@@ -1,4 +1,4 @@
-char tolower(char c) {
+char	tolower(char c) {
     if (c >= 'A' && c <= 'Z') {
         return (c + 32);
     }
@@ -6,7 +6,7 @@ char tolower(char c) {
     return (c);
 }
 
-char *ft_strlowcase(char *str) {
+char	*ft_strlowcase(char *str) {
     int it = 0;
 
     while (str[it]) {

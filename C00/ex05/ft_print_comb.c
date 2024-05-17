@@ -1,11 +1,11 @@
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
     write(1, &c, 1);
 }
 
-void write_comb(int x, int y, int z) {
+void	write_comb(int x, int y, int z) {
     ft_putchar(('0' + x));
     ft_putchar(('0' + y));
     ft_putchar(('0' + z));
@@ -15,7 +15,7 @@ void write_comb(int x, int y, int z) {
     }
 }
 
-void ft_print_comb(void)
+void	ft_print_comb(void)
 {
     int x, y, z;
 

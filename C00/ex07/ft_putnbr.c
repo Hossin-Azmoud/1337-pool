@@ -1,13 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_rev_int_tab.c.c                                   :+     ::+:    :+:  */
+/*                                                     +:+ +:+         +:+    */
+/*   By: Hossin Azmoud <azm@student.42.fr>            +#+  +:+       +#+      */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/24 15:49:52 by Hossin           #+#    #+#              */
+/*   Updated: 2024/04/24 15:49:52 by Hossin          ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
-    write(1, &c, 1);
+	write(1, &c, 1);
 }
 
-void ft_putnbr(int nb) {
-    if (nb > 9) {
-        ft_putnbr(nb / 10);
-    }
-    ft_putchar(nb % 10 + '0');
+void	ft_putnbr(int nb)
+{
+	if (nb > 9){
+		ft_putnbr(nb / 10);
+	}
+	ft_putchar(nb % 10 + '0');
 }

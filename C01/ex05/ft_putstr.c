@@ -1,8 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_rev_int_tab.c.c                                   :+     ::+:    :+:  */
+/*                                                     +:+ +:+         +:+    */
+/*   By: Hossin Azmoud <azm@student.42.fr>            +#+  +:+       +#+      */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/17 18:34:49 by Hossin           #+#    #+#              */
+/*   Updated: 2024/05/17 18:34:49 by Hossin          ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
 #include <unistd.h>
-void ft_putstr(char *str) {
-    if (!str) return ;
-    while (*str) {
-        write(1, str, 1);
-        str++;
-    }
+
+void	ft_putstr(char *str)
+{
+	if (!str)
+		return ;
+	while (*str)
+	{
+		write(1, str, 1);
+		str++;
+	}
 }
