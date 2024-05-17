@@ -1,8 +1,0 @@
-resolve: /home/moody/Desktop/1337/C01/ex03 0x55ad5860ada0
-resolve: /home/moody/Desktop/1337/C01 0x55ad5860afd0
-resolve: /home/moody/Desktop/1337 0x55ad5860b1a0
-resolve: /home/moody/Desktop/1337/C01 0x55ad5860b4d0
-resolve: /home/moody/Desktop/1337/C01/.gitignore 0x55ad5860b890
-resolve: /home/moody/Desktop/1337/C01 0x55ad5860ab40
-resolve: /home/moody/Desktop/1337/C01/ex06 0x55ad5860b890
-resolve: /home/moody/Desktop/1337/C01/ex06/ft_strlen.c 0x55ad58603ee0
